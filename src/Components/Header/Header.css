@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 62.5%/1.4 BlinkMacSystemFont, -apple-system, Arial, "Segoe UI", Roboto, Helvetica, sans-serif;
+    font-size: 100%;
+}
+button:focus {
+    outline: none !important
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+.Header-Top .Header-Top-Left>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 24px;
+}
+.Header-Top .Header-Top-Left>ul>li>a:hover{
+    text-decoration: underline;
+}
+.Header-Top .Header-Top-Right>ul>li>a{
+    list-style-type:none;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 24px;
+}
+.Header-Top .Header-Top-Right>ul{
+    display: flex;
+}
+
+.Hello{
+    font-size: 120%;
+    margin-left: 24px;
+}
+.Login{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.Header-Wrap{
+    width: 100%;
+    background-color: #152536;
+    display: block;
+}
+.Header-Wrap-Inside{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+@media (max-width: 1280px) {
+    .Header-Wrap-Inside {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media (min-width: 1024px){
+    .Header-Wrap-Inside {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .Header-Wrap-Inside {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+.Header-Top{
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 64.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-Under{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.Rozetka-Logo{
+    height: auto;
+    width: 240px;
+}
+.Btn-Under{
+    position: relative;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,0);
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.Btn-Under-Wrap{
+    display: block;
+    margin-right: 24px;
+}
+.Btn-Under:hover{
+    background-color: rgb(42, 59, 76)
+}
+.fa-angle-down{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.Number{
+    font-size:12px;
+    font-weight: 600;
+}
+.Rozetka-Logo-Wrap{
+    margin-right: 24px;
+    width: auto;
+    overflow: visible;
+}
+.City:hover{
+    color: #ff8c8c;
+}
+.fa-user-alt {
+    margin-left: 5px;
+}
+.fa-search{
+    color: #7a7a7a;
+    margin-left: 10px;
+}
+.Search{
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline:none;
+}
+.Search-Wrap{
+    width: 60%;
+    margin-right: 24px;
+    display: flex;
+}
+.Form-Wrap{
+    display: flex;
+    background-color: white;
+    border-radius: 3px 0 0 3px ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.Search-Btn{
+    background-color: #00a146;
+    height: auto;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    color: white;
+    padding: 0 16px 0 16px;
+    transition: 0.3s;
+    outline: none;
+}
+.Search-Btn:hover{
+    background-color: #01ca5b;;
+}
+.fa-bars{
+    display: none;
+}
+.fa-th-large, .fa-bars{
+    color: #838d97;
+}
+
+.Nav-Right>li>div{
+    width: 68px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Nav-Right>li>div>i{
+    color: #7a7a7a;
+    font-size: 35px;
+}
+.fa-microphone{
+    font-size: 20px;
+    color: #606ea7;
+}
+.fa-microphone:hover{
+    color: #ff6262
+}
+.Micro-Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: white;
+}
+.Nav-Right{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 1065px) {
+    .Header-Top, .Btn-Under, .Nav-Right>ul>li>div, .S-Div,.fa-balance-scale,.fa-shipping-fast,.fa-search {
+        display: none;
+    }
+    .Nav-Right>li>div>i{
+        font-size: 30px;
+    }
+    .Some{
+        display: block;
+    }
+    .Header-Under{
+        padding-bottom: 0;
+    }
+    .fa-bars{
+        font-size: 25px;
+        margin-right: 15px;
+        display: block;
+    }
+}
+.H-Div{
+    position: relative;
+}
+@media (max-width: 759px) {
+    .Search-Btn, .Micro-Search, .Rozetka-Logo-Wrap, .H-Div{
+        display: none;
+    }
+    .Search-Wrap{
+        width: 100%;
+    }
+    .Form-Wrap{
+        border-radius: 3px;
+    }
+    .fa-bars{
+        margin-right: 0;
+    }
+}
+.Count-Like-Wrap{
+    position: absolute;
+    right: 2px;
+    top: 0;
+    display: block;
+}
+.Count-Like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5e5e;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+

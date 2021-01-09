@@ -1,0 +1,14 @@
+.Shop-Title-Text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.Shop-Title-Wrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.Green-Icon{
+    color: #00a046;
+    font-size: 25px;
+    margin-right: 10px;
+}

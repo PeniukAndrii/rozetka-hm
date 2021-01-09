@@ -1,0 +1,50 @@
+.Item-Main-Wrap{
+    width: 16.66666%;
+    background-color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+.Img-Wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 170px;
+    padding-bottom: 16px;
+}
+.Img-Wrap>img{
+    max-height: 140px;
+    max-width: 100%;
+}
+.Item-Title{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.Item-Price{
+    font-size: 24px;
+}
+.Like-Item{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+.fa-heart {
+    font-size: 23px;
+    color: #fcc10a;
+}
+.Like-Item:hover{
+    background-color: #f1f0f0;
+}
+.Item-Price>span{
+    font-size: 16px;
+}

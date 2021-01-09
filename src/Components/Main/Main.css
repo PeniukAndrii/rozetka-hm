@@ -1,0 +1,224 @@
+.Main-Wrap{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media (max-width: 1280px) {
+    .Main-Wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media (min-width: 1024px){
+    .Main-Wrap {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .Main-Wrap {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+.Left-Bar-Main{
+    width: 300px;
+}
+.Left-Bar-List{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.Left-Bar-List>ul, .Left-Bar-List>div>ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Left-Bar-List>ul>li{
+    padding-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2px;
+}
+.Left-Bar-List>ul>li>div>a, .Left-Bar-List>div>ul>li>a{
+    text-decoration: none;
+    color: #3e77aa;
+    cursor: pointer;
+    text-align: center;
+}
+.Left-Bar-List>ul>li>div>a:hover, .Left-Bar-List>div>ul>li>a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.Left-Bar-List>ul>li>div>div{
+    display: inline-block;
+    width: auto;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 31px;
+}
+.Left-Bar-List>ul>li>div>div>i{
+    font-size: 17px;
+    width: 20px;
+    color: #adb8c8;
+}
+.fa-chevron-right{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #3e77aa;
+}
+.Hello-Wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.Hello-Left-Bar{
+    font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.Login-Text{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.Login-Btn-Wrap{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.Login-Btn{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    background-color: #3e77aa;
+    height: auto;
+    transition: .2s;
+}
+.Login-Btn:hover{
+    background-color: #498eca;
+}
+.Download-App-Wrap{
+    display: flex;
+}
+.Left-Side-Bar-Wrap-Padding{
+    padding-top: 20px;
+    padding-left: 15px;
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 20px;
+}
+.Download-App-Wrap>img{
+    width: 100px;
+    margin-right: 20px;
+    height: auto;
+}
+.Left-Side-Bar-Text{
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: #797878;
+}
+.Left-Side-Bar-Number{
+    width: 100%;
+   padding-bottom: 5px;
+   padding-top: 5px;
+}
+.Left-Side-Bar-Time{
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+}
+.Social-Media{
+    display: flex;
+}
+.Social-Media>div{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: 1px solid #797878;
+    padding: 3px;
+    border-radius: 10px;
+}
+.Social-Media>div>i{
+    font-size: 20px;
+    transition: .1s;
+}
+.Social-Media>div>i:hover {
+    color: #f15c5c;
+
+}
+.All-Carousel-Item-Wrap{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+}
+.All-Carousel-Item{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #e9e9e9;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    color: #3e77aa;
+    font-size: 14px;
+}
+.All-Carousel-Item:hover{
+    text-decoration: underline;
+    color: #de4646;
+}
+
+.Help-Block{
+    padding-bottom: 5px;
+}
+.Left-Bar-List>div>ul>li{
+    font-size: 14px;
+    line-height: 31px;
+    width: 100%;
+}
+.Card-Pay{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.Card-Pay>img{
+    padding-right: 30px;
+}
+.Right-Bar-Main{
+    border-left: 1px solid #e9e9e9;
+    width: calc(100% - 300px);
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.Slider{
+    display: block;
+    width: 100px;
+}
+.Slider{
+    height: 400px;
+    width: 900px;
+}
+.carousel-indicators{
+    display: none;
+}
+.All-Item{
+    display: flex;
+    flex-wrap: wrap;
+}
