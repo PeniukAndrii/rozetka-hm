@@ -4,33 +4,16 @@ import {Carousel} from "react-bootstrap";
 import {FakeStoreOffer} from "../../FakeServer/Offer";
 import TitleComp from "../Header/TitleComp/TitleComp";
 import ShowAllComp from "../Header/ShowAllComp/ShowAllComp";
+import LeftSideBar from "./LeftSideBad/LeftSideBar";
+import LeftSideBarNew from "./LeftSideBad/LeftSideBarNew";
+import {PopularOffer} from "../../FakeServer/Popular";
+import {ForYouOffer} from "../../FakeServer/ForYou";
 
 export default function Main(){
     return(
         <div className={'Main-Wrap'}>
             <div className={'Left-Bar-Main'}>
-                <div className={'Left-Bar-List'}>
-                    <ul>
-                        <li><div><div><i className="fas fa-laptop"/></div><a href="/#">Ноутбуки та комп’ютери</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-mobile-alt"/></div><a href="/#">Смартфони, ТВ і електроніка</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-gamepad"/></div><a href="/#">Товари для геймерів</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-blender-phone"/></div><a href="/#">Побутова техніка</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-couch"/></div><a href="/#">Товари для дому</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-toolbox"/></div><a href="/#">Інструменти та автотовари</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-bath"/></div><a href="/#">Сантехніка та ремонт</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-tractor"/></div><a href="/#">Дача, сад і город</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-biking"/></div><a href="/#">Спорт і захоплення</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-tshirt"/></div><a href="/#">Одяг, взуття та прикраси</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-female"/></div><a href="/#">Краса та здоров’я</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-child"/></div><a href="/#">Дитячі товари</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-paperclip"/></div><a href="/#">Канцтовари та книги</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-cocktail"/></div><a href="/#">Алкогольні напої та продукти</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-barcode"/></div><a href="/#">Товари для бізнесу</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-people-carry"/></div><a href="/#">Послуги та сервіси</a></div><i className="fas fa-chevron-right"/></li>
-                        <li><div><div><i className="fas fa-tag"/></div><a href="/#">Усе для затишних свят</a></div><i className="fas fa-chevron-right"/></li>
-                    </ul>
-                </div>
-
+                <LeftSideBar/>
                 <div className={'Hello-Wrap'}>
                     <div>
                         <div className={'Hello-Left-Bar'}>Ласкаво просимо!</div>
@@ -120,7 +103,7 @@ export default function Main(){
 
             <div className={'Right-Bar-Main'}>
 
-                <Carousel>
+                <Carousel >
                     <Carousel.Item>
                         <img className="d-block" src="https://i2.rozetka.ua/owoxads/sliders/28/28991.jpg" alt="First slide"/>
                     </Carousel.Item>
@@ -137,16 +120,34 @@ export default function Main(){
                         <img className="d-block" src="https://i1.rozetka.ua/owoxads/sliders/27/27196.jpg" alt="Second slide"/>
                     </Carousel.Item>
                 </Carousel>
+
                 <div className={'All-Carousel-Item-Wrap'}>
                     <div className={'All-Carousel-Item'}>
                         <a href="/#">Всі Акції</a>
                     </div>
                 </div>
+                <div className={'Left-Side-Bar-D'}>
+                    <div className={'Title-LSB'}>Каталог товарів</div>
+                    <LeftSideBarNew/>
+                </div>
+                <div className={'Left-Side-Btn-Wrap'}>
+                    <div className={'Left-Side-Btn'}>
+                        <button>Каталог товарів</button>
+                    </div>
+                </div>
+
                 <TitleComp title={'Тільки в Розетці'} icon={'fa-star'}/>
                 <div className={'All-Item'}>
                     <ShowAllComp value={FakeStoreOffer}/>
                 </div>
                 <TitleComp title={'Зараз користується попитом в категорії Штучні ялинки'} icon={'fa-comments'}/>
+                <div className={'All-Item'}>
+                    <ShowAllComp value={PopularOffer}/>
+                </div>
+                <TitleComp title={'Більше товарів для вибору'} icon={'fas fa-th'}/>
+                <div className={'All-Item'}>
+                    <ShowAllComp value={ForYouOffer}/>
+                </div>
             </div>
         </div>
     );

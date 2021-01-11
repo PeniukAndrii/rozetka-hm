@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import './ShowAllComp.css'
 import Item from "../../Item/Item";
 
@@ -14,7 +14,7 @@ export default function ShowAllComp({value}){
         <div className={'Main-List'}>
             <div className={'All-Item'}>
                 {
-                    value.map(value => value.id<=count ? <Item key={value.id} value={value}/>:null)
+                    value.map(value =>  value.id<=count && <Item key={value.id} value={value}/>)
                 }
             </div>
             <div className={`Btn-Show-Wrap ${Btn}`} onClick={()=>handleItemAll()}>

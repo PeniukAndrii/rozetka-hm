@@ -266,6 +266,20 @@ ul{
     font-size: 12px;
     font-weight: 600;
 }
-
+.C-Div{
+    position: relative;
+}
+.Cart-Price-Wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.Cart-Price{
+    background-color: #01ca5b;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+}
 
 

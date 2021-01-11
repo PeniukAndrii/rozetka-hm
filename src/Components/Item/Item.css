@@ -22,8 +22,12 @@
 .Item-Title{
     font-size: 14px;
     padding-bottom: 8px;
+    min-height: 60px;
 }
 .Item-Price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 24px;
 }
 .Like-Item{
@@ -47,4 +51,40 @@
 }
 .Item-Price>span{
     font-size: 16px;
+}
+.Add-To-Cart{
+    background-color: #01ca5b;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.Add-To-Cart:hover{
+    background-color: #2ee77a;
+}
+.Btn-Check{
+    background-color: #ff3737;
+}
+.Btn-Check:hover{
+    background-color: #fd5e5e;
+}
+.Price{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (max-width: 1440px) {
+    .Item-Main-Wrap {
+        width: 20%;
+    }
+}
+@media (max-width: 1280px) {
+    .Item-Main-Wrap{
+        width: 25%;
+    }
+}
+@media (max-width: 760px) {
+    .Item-Main-Wrap{
+        width: 50%;
+    }
 }

@@ -1,13 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Header.css'
 import {useSelector} from "react-redux";
 export default function Header(){
     const item = useSelector(({item})=>item)
-
-
-    const handleLikeList = ()=>{
-        console.log(1)
-    }
+    const cart = useSelector(({cart})=>cart)
 
     return(
         <div className={'Header-Wrap'}>
@@ -48,14 +44,20 @@ export default function Header(){
                     <ul className={'Nav-Right'}>
                         <li className={'S-Div'}><div className={'S-Div'}><i className="fas fa-shipping-fast"/></div></li>
                         <li className={'S-Div'}><div className={'S-Div'}><i className="fas fa-balance-scale"/></div></li>
-                        <li className={'H-Div'} onMouseEnter={()=>handleLikeList()}><div className={'H-Div'}><i className={`far fa-heart`}/>
+                        <li className={'H-Div'}><div className={'H-Div'}><i className={`far fa-heart`}/>
                         <div className={`Count-Like-Wrap`}>
                             {
-                                item.length > 0 ? (<div className={'Count-Like'}>{item.length}</div>): null
+                                item.length > 0 && <div className={'Count-Like'}>{item.length}</div>
                             }
                         </div>
                         </div></li>
-                        <li className={'C-Div'}><div className={'C-Div'}><i className="fas fa-shopping-cart"/></div></li>
+                        <li className={'C-Div'}><div className={'C-Div'}><i className="fas fa-shopping-cart"/>
+                        <div className={`Cart-Price-Wrap`}>
+                                {
+                                    cart > 0 && <div className={'Cart-Price'}>{cart}</div>
+                                }
+                        </div>
+                        </div></li>
                     </ul>
 
                 </div>
