@@ -4,42 +4,42 @@ export const FakeStoreOffer=[
         title:'Крісло для геймерів Hator Sport Light',
         price:4199,
         img:'https://i8.rozetka.ua/goods/15985791/hator_htc_911_images_15985791739.jpg',
-        Like:1
+        like:1
     },
     {
         id:2,
         title:'Вино ігристе Tenuta Berni Prosecco Vino Frizzante',
         price:199,
         img:'https://i2.rozetka.ua/goods/14532609/tenuta_berni_8010719007902_images_14532609592.jpg',
-        Like:2
+        like:2
     },
     {
         id:3,
         title:'Електрична зубна щітка PECHAM Navy Blue',
         price:699,
         img:'https://i2.rozetka.ua/goods/21111719/pecham_navy_blue_travel_images_21111719856.jpg',
-        Like:3
+        like:3
     },
     {
         id:4,
         title:'Крісло для геймерів Hator Sport Light',
         price:4499,
         img:'https://i8.rozetka.ua/goods/15985844/hator_htc_912_images_15985844022.jpg',
-        Like:4
+        like:4
     },
     {
         id:5,
         title:'Універсальний набір інструменту Alloid 3/8" 82',
         price:1700,
         img:'https://i1.rozetka.ua/goods/6155338/alloid_ni_3082p_images_6155338184.jpg',
-        Like:5
+        like:5
     },
     {
         id:6,
         title:'Набір Sleepingg ковдра зимова 200х220 ',
         price:675,
         img:'https://i2.rozetka.ua/goods/20472382/sleepingg_4820227283231_images_20472382236.jpg',
-        Like:6
+        like:6
     },
     {
         id:7,

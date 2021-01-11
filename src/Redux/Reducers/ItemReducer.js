@@ -14,7 +14,6 @@ export const reducer = (state=initialState, action)=>{
             if(updChose.length === state.item.length){
                 updChose.push(action.payload)
             }
-            console.log(updChose)
             return {...state, item: updChose}
         case 'ADD_CART':
             const updItem = state.cartList.filter((el)=>el !== action.payload.price)
@@ -22,7 +21,6 @@ export const reducer = (state=initialState, action)=>{
                 updItem.push(action.payload.price)
             }
             const sum = updItem.reduce((acc,el)=>(acc+=el),0)
-            console.log(state.cart)
             return {...state, cartList:updItem, cart:[sum]}
         default : {
             return state
