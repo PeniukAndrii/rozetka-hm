@@ -11,15 +11,17 @@ export default function ShowAllComp({value}){
         setClassBtn('Btn-None')
     }
     return(
-        <div className={'Main-List'}>
-            <div className={'All-Item'}>
-                {
-                    value.map(value =>  value.id<=count && <Item key={value.id} value={value}/>)
-                }
-            </div>
-            <div className={`Btn-Show-Wrap ${Btn}`} onClick={()=>handleItemAll()}>
-                <div className={'Btn-Show'}>
-                    <div>Показати ще <i className="fas fa-arrow-down arrow"/></div>
+        <div className={'All-Item'}>
+            <div className={'Main-List'}>
+                <div className={'All-Item'}>
+                    {
+                        value.map(value =>  value.id<=count && <Item key={value.id} value={value}/>)
+                    }
+                </div>
+                <div className={`Btn-Show-Wrap ${Btn}`} onClick={()=>handleItemAll()}>
+                    <div className={'Btn-Show'}>
+                        <div>Показати ще <i className="fas fa-arrow-down arrow"/></div>
+                    </div>
                 </div>
             </div>
         </div>

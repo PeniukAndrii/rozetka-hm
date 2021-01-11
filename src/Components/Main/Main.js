@@ -137,17 +137,11 @@ export default function Main(){
                 </div>
 
                 <TitleComp title={'Тільки в Розетці'} icon={'fa-star'}/>
-                <div className={'All-Item'}>
-                    <ShowAllComp value={FakeStoreOffer}/>
-                </div>
+                <ShowAllComp value={FakeStoreOffer}/>
                 <TitleComp title={'Зараз користується попитом в категорії Штучні ялинки'} icon={'fa-comments'}/>
-                <div className={'All-Item'}>
-                    <ShowAllComp value={PopularOffer}/>
-                </div>
+                <ShowAllComp value={PopularOffer}/>
                 <TitleComp title={'Більше товарів для вибору'} icon={'fas fa-th'}/>
-                <div className={'All-Item'}>
-                    <ShowAllComp value={ForYouOffer}/>
-                </div>
+                <ShowAllComp value={ForYouOffer}/>
             </div>
         </div>
     );
